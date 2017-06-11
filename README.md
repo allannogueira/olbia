@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Front End Gulp Boilerplate
 ==========================
 
@@ -120,3 +121,7 @@ February 25, 2014
 * I added fonts and other misc assets that should be moved from `dev` to `dist` upon deployment
 * I removed image caching because there was an issue where it would randomly break all of the images. I'll figure this but out later though.
 * Updated npm dependencies accordingly
+=======
+# olbia
+site olbia
+>>>>>>> a971fe63723ec451bed08eb03325e1d7e78eedb2
