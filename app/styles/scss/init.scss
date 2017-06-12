@@ -697,6 +697,9 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
+*{
+  font-family: 'Roboto';
+}
 //pages
 a,p,label{
 	font-size: 12pt;
@@ -716,12 +719,81 @@ p{
 	padding-bottom: 20px;
 }
 
+.box{
+  background: $primary;
+  color: $branco; 
+  font-size: 14pt;
+  padding: 20px;
+  position: absolute;
+  margin-top: 30px;
+  opacity: 0.8; 
+}
+
 section.home{
 	background-position: bottom right;	
 	background-image: url('../images/home/bg1.jpg');
 	background-size: 100% auto;
-	
-	div.scroll-bottom{
+	p{
+      color: $branco;
+      font-size: 20pt;
+    
+  }
+  form{
+    
+    background: $primary !important;
+    padding: 20px;
+    p{
+      font-size: 12pt;
+      color: $cinzaClaro;
+      text-align: left;
+    }
+
+    .form-group{
+      float: left;
+      margin-right: 30px;
+      label{
+        color: $branco;
+        font-size: 8pt;
+        margin-bottom: 5px; 
+      }
+      select{
+        min-width: 120px;
+        border-radius: 0px;
+        border: 0px;
+        padding: 10px;
+      }
+    }
+    
+    input[type="text"]{
+      font-size: 6pt;
+      min-width: 390px;
+      height: 50px;
+      border-radius: 0px;
+      border: none;
+      padding: 5px;
+    }
+    button{
+      height: 50px;
+      min-width: 50px;
+      border-radius: 0px;
+      border: none;
+      &:last-child{
+        background: $cinzaClaro;
+        color: $branco;
+        
+        font-weight: bold;
+      }
+      
+    }
+    
+
+    hr{
+      display: absolute;
+      width: 100%;
+    }
+  }
+
+	a.scroll-bottom{
 		position: absolute;
 		margin-top: 40%;
 		margin-left: 10%;
@@ -737,7 +809,7 @@ section.home{
 section.imoveis{
 	background-position: bottom;	
 	background-image: url('../images/home/bg2.jpg');
-	div.scroll-bottom{
+	a.scroll-bottom{
 		position: absolute;
 		margin-top: 40%;
 		margin-left: 80%;
@@ -757,7 +829,7 @@ section.section3{
 	background-image: url('../images/home/bg3.jpg');
 	background-size: 100% auto;
 	
-	div.scroll-bottom{
+	a.scroll-bottom{
 		position: absolute;
 		margin-top: 40%;
 		margin-left: 10%;
@@ -888,8 +960,7 @@ h1{margin-top: 0px !important;padding-top: 20px}
 	display: inline-block;
 	border-radius: 50%;
 }
-
-.scroll-bottom{
+a.scroll-bottom{
 	background: $secondary;
 	color: $branco;
 	font-size: 20pt;
@@ -905,39 +976,57 @@ h1{margin-top: 0px !important;padding-top: 20px}
 }
 
 @media screen and (max-width: 768px) {
-  	section.home{
-		background-size:  auto 100%;
-		div.scroll-bottom{
-			position: absolute;
-			top: 50%;
-			left:50%;
-			margin-left: -25px;
-			margin-top: auto;
-		}
- 	}
+  #home{
+    section{
+      background-position: center;
+      background-size:  auto 100%;
+    }
 
- 	section.imoveis{
-		div.scroll-bottom{
-			position: relative;
-			margin-top: 70%;
-			left:50%;
-			margin-left: -25px;
-			
-		}
- 	}
+    section.home{
+      background-size:  auto 100%;
+      a.scroll-bottom{
+        position: absolute;
+        top: 50%;
+        left:50%;
+        margin-left: -25px;
+        margin-top: auto;
+      }
+    }
 
- 	section.aGallura{
- 		h1{
-  			font-size: 35pt;
-  		}
- 	}
+    section.imoveis{
+      a.scroll-bottom{
+        position: relative;
+        margin-top: 70%;
+        left:50%;
+        margin-left: -25px;
+        
+      }
+    }
+
+    section.aGallura{
+      h1{
+          font-size: 35pt;
+        }
+    }
+  }
+
+  #facilidades{
+    .sections{
+      section{
+          background-size: auto 100% !important;
+          background-position: center !important;
+      }
+    }
+  }
 }
 
 
 #facilidades{
   .sections{
     section{
-      div.scroll-bottom{
+        background-size: auto 100%;
+      
+      a.scroll-bottom{
         position: absolute;
         margin-top: 40%;
         margin-left: 10%;
@@ -955,16 +1044,17 @@ h1{margin-top: 0px !important;padding-top: 20px}
         background-size: 100% auto;
       }
       &:nth-child(2){
-        background-position: bottom right;	
+        background-position: top right;	
         background-image: url('../images/facilities/bg2.jpg');
         background-size: 100% auto;
+        min-height: 731px !important;
       }
-      &:nth-child(3){
+      &:nth-child(4){
         background-position: bottom right;	
         background-image: url('../images/facilities/bg3.jpg');
         background-size: 100% auto;
       }
-      &:nth-child(4){
+      &:nth-child(5){
         background-position: bottom right;	
         background-image: url('../images/facilities/bg4.jpg');
         background-size: 100% auto;
@@ -973,11 +1063,24 @@ h1{margin-top: 0px !important;padding-top: 20px}
   }
 }
 
+.section25{
+  text-align: center;
+  p{
+    &:nth-child(1){
+      margin-top: -60px; 
+      font-size: 12pt; 
+
+    }
+    span{
+      font-style: italic;
+    }
+  }
+}
 
 #reserva{
   .sections{
     section{
-      div.scroll-bottom{
+      a.scroll-bottom{
         position: absolute;
         margin-top: 40%;
         margin-left: 10%;
@@ -1017,7 +1120,7 @@ h1{margin-top: 0px !important;padding-top: 20px}
 @media screen and (min-width: 768px) {
  	.navbar .nav{
  		float: none !important;
- 		width: 453px;
+ 		width: 458px;
  		margin: auto !important;
  	}
 }

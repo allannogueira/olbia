@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Website Title</title>
+    <title>OLBIA - FACILIDADES</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -31,8 +31,8 @@
             <ul class="nav navbar-nav">
                 <li><img src="images/logo.png" style="max-width: 30px; margin-top: 9px" /></li>
                 <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li class="active"><a href="#home">SOBRE NÓS</a></li>
-                <li><a href="facilidades.html">FACILIDADES</a></li>
+                <li><a href="index.html">SOBRE NÓS</a></li>
+                <li class="active"><a href="facilidades.html">FACILIDADES</a></li>
                 <li><a href="#contato">FALE CONOSCO</a></li>
             </ul>
         </div>
@@ -40,80 +40,149 @@
 </nav>
 <div class="sections">
 <section id="home" class='home wow bounceInUp'>
-    <div class="scroll-bottom text-center" onclick="$('a[href=\'#aGallura\']').click()">V</div>
-</section>
-    <section id="imoveis" class="imoveis wow bounceInUp" >
-        <div class="scroll-bottom text-center" onclick="$('a[href=\'#contato\']').click()">V</div>
-    </section>
-    <section id="section3" class="section3 wow bounceInUp" >
-        <div class="scroll-bottom text-center" onclick="$('a[href=\'#contato\']').click()">V</div>
-    </section>
-    <section id="section4" class="section4 wow bounceInUp" >
-        <div class="scroll-bottom text-center" onclick="$('a[href=\'#contato\']').click()">V</div>
-    </section>
-    <section id="contato" class="contato wow bounceInUp container" ng-controller="contato">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-                    
-                    <h1 class="text-center">CONTATO / CONTACT US BY EMAIL</h1>
-                    <!--p class="text-center">Utilize o formulário abaixo para entrar em contato ou solicitar informações adicionais e nossa equipe entrará em contato com você o mais rápido possível. Se preferir teremos o prazer de falar pessoalmente com você basta utlilizar o número de telefone informado abaixo. Obrigado pelo seu contato.
-                    </p>
-                    <hr/-->
-
-                    <form name="form" ng-submit="enviar()" novalidate>
-                        <div class="row">
-                            <div class="col-sm-10 col-sm-offset-1">
-                                <div class="row">
-                                    <div class="col-sm-12 form-group"  ng-class="{'has-error' : form.nome.$invalid}">
-                                        <label for="nome">NOME / NAME</label>                                        
-                                        <input ng-model="nome" name="nome" type="text" class="form-control" required/>                                      
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 form-group" ng-class="{'has-error' : form.email.$invalid}">
-                                        <label for="email">EMAIL</label>
-                                        <input ng-model="email" name="email" type="email" class="form-control" required/>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 form-group" ng-class="{'has-error' : form.mensagem.$invalid}">
-                                        <label for="mensagem">MENSAGEM / YOUR MESSAGE</label>
-                                        <textarea ng-model="nmensagem" name="mensagem" class="form-control" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        CONTATO / CONTACT US BY phone<br/>
-                                        _____________
-                                        <br>
-                                        RESERVATION OFFICE NUMBER<BR/>
-                                        (Only for OLBIA Hotels)
-                                        1 800 221 6666 *
-                                         
-                                        
-
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 ">
-                                        <button type="submit" class="btn btn-primary pull-right">Enviar</button>
-                                    </div>
-                                </div>  
-                            </div>
-                        </div>
-                    </form>
-
-                    <br/>
-                    <br/>
-                </div>
+        <a class="scroll-bottom text-center" href="#section2">V</a>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br/><br/><br/><br/><br/>
+                <img src="/images/logo2.png" style="max-width: 250px"/>
+                <br/>
+                <p>
+                    hotels.campinas/sp<br/>
+                    cambuí
+                </p>
             </div>
         </div>
+        <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 text-center">
+            <form class="form-inline">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input class="form-control" type="text" placeholder="ONDE GOSTARIA DE FICAR / WHERE DO YOU WANT TO STAY"/>                        
+                    
+                        <button>CHECK-IN</button>
+                    
+                        <button>CHECK-OUT</button>
+                    
+                        <button onclick="window.open('reserva.html')">GO</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <hr/>
+                        <p>MELHORE SUA BUSCA / IMPROVE YOUR SEARCH</p>
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="">QUARTO(S)/ROOM(S)</label><br/>
+                            <select>
+                                <option></option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">ADULTO(S)/ADULT(S)</label><br/>
+                            <select>
+                                <option></option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">CRIANÇA(S)/KIDS</label><br/>
+                            <select>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>                    
+                </div>
+                <div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
 
-    </section>
+</section>
+<section id="section2" class="imoveis wow bounceInUp" >
+    <a class="scroll-bottom text-center" href="#section3">V</a>
+
+   
+</section>
+ <div class="section25" class="row">
+        <div class="col-sm-12 text-center">
+            <p>RESERVE UM PERÍODO PARA APRECIAR UM EXCELENTE CAFÉ DA MANHÃ<br/>
+            <span>*Café, leite, achocolatado, suco, pão, frios</span></p>
+        </div>
+    </div>
+
+<section id="section3" class="section3 wow bounceInUp" >
+    <a class="scroll-bottom text-center" href="#section4">V</a>
+</section>
+<section id="section4" class="section4 wow bounceInUp" >
+    <a class="scroll-bottom text-center" href="#contato">V</a>
+</section>
+<section id="contato" class="contato wow bounceInUp container" ng-controller="contato">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+            
+                <h1 class="text-center">CONTATO / CONTACT US BY EMAIL</h1>
+                <!--p class="text-center">Utilize o formulário abaixo para entrar em contato ou solicitar informações adicionais e nossa equipe entrará em contato com você o mais rápido possível. Se preferir teremos o prazer de falar pessoalmente com você basta utlilizar o número de telefone informado abaixo. Obrigado pelo seu contato.
+                </p>
+                <hr/-->
+
+                <form name="form" ng-submit="enviar()" novalidate>
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div class="row">
+                                <div class="col-sm-12 form-group"  ng-class="{'has-error' : form.nome.$invalid}">
+                                    <label for="nome">NOME / NAME</label>                                        
+                                    <input ng-model="nome" name="nome" type="text" class="form-control" required/>                                      
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 form-group" ng-class="{'has-error' : form.email.$invalid}">
+                                    <label for="email">EMAIL</label>
+                                    <input ng-model="email" name="email" type="email" class="form-control" required/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 form-group" ng-class="{'has-error' : form.mensagem.$invalid}">
+                                    <label for="mensagem">MENSAGEM / YOUR MESSAGE</label>
+                                    <textarea ng-model="nmensagem" name="mensagem" class="form-control" required></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    CONTATO / CONTACT US BY phone<br/>
+                                    _____________
+                                    <br>
+                                    RESERVATION OFFICE NUMBER<BR/>
+                                    (Only for OLBIA Hotels)
+                                    1 800 221 6666 *
+                                        
+                                    
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 ">
+                                    <button type="submit" class="btn btn-primary pull-right">Enviar</button>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </form>
+
+                <br/>
+                <br/>
+            </div>
+        </div>
+    </div>
+
+</section>
 </div>
     <footer class="footer">
-        <div class="scroll-top text-center" onclick="$('a[href=\'#home\']').click()">^</div>
+        <a class="scroll-top text-center" href="#home">^</a>
     </footer>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
