@@ -23,7 +23,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand visible-xs">GALLURA</a>
+            <a class="navbar-brand visible-xs">OLBIA</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -72,24 +72,26 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="form-group">
-                            <label for="">QUARTO(S)/ROOM(S)</label><br/>
-                            <select>
-                                <option></option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="">ADULTO(S)/ADULT(S)</label><br/>
-                            <select>
-                                <option></option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="">CRIANÇA(S)/KIDS</label><br/>
-                            <select>
-                                <option></option>
-                            </select>
-                        </div>
+                        <form class="">
+                            <div class="form-group">
+                                <label for="">QUARTO(S)/ROOM(S)</label><br/>
+                                <select class="form-control">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">ADULTO(S)/ADULT(S)</label><br/>
+                                <select class="form-control">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">CRIANÇA(S)/KIDS</label><br/>
+                                <select class="form-control">
+                                    <option></option>
+                                </select>
+                            </div>
+                        </form>
                     </div>                    
                 </div>
                 <div>
@@ -104,7 +106,7 @@
         <div class="row box">
             <div class="col-sm-6 col-sm-offset-3">
                 <div class="row">
-                    <div class="col-sm-2 text-center">
+                    <div class="col-sm-2 text-center bold">
                         find.us
                     </div>  
                     <div class="col-sm-10">
@@ -119,7 +121,7 @@
         <div class="row box">
             <div class="col-sm-6 col-sm-offset-3">
                 <div class="row">
-                    <div class="col-sm-2 text-center">
+                    <div class="col-sm-2 text-center bold">
                         HOTEL
                     </div>  
                     <div class="col-sm-10">
@@ -129,6 +131,7 @@
             </div>
         </div>
     </section>
+    <a name="contato"></a>
     <section id="section4" class="contato wow bounceInUp container" ng-controller="contato">
         <div class="container">
             <div class="row">
@@ -161,23 +164,28 @@
                                     </div>
                                 </div>
                                 <div class="row">
+                                    <div class="col-sm-12 ">
+                                        <button type="submit" class="btn btn-primary pull-right">Enviar</button>
+                                    </div>
+                                </div>  
+                                <div class="row">
                                     <div class="col-sm-12">
-                                        CONTATO / CONTACT US BY phone<br/>
-                                        _____________
-                                        <br>
-                                        RESERVATION OFFICE NUMBER<BR/>
-                                        (Only for OLBIA Hotels)
-                                        1 800 221 6666 *
+                                        <br/><br/><br/>
+                                        <h1>CONTATO / CONTACT US BY PHONE</h1>
+                                        <div class="text-center">
+                                            _____________
+                                            <br/>
+                                            <br>
+                                            <strong>RESERVATION OFFICE NUMBER</strong><BR/>
+                                            (Only for OLBIA Hotels)
+                                            <strong>1 800 221 6666 *</strong>
+                                        </div>
                                          
                                         
 
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-sm-12 ">
-                                        <button type="submit" class="btn btn-primary pull-right">Enviar</button>
-                                    </div>
-                                </div>  
+                                
                             </div>
                         </div>
                     </form>
@@ -223,7 +231,7 @@
             $scope.enviar = function(){
                 if($scope.form.$valid){
                     var destinatario = "marcus.cominatto@ddtotal.com.br";
-                    var assunto = "Contato site - Gallura";
+                    var assunto = "Contato site - Olbia";
                     var msg = "";
                     msg += "Nome: "+$scope.nome+"<br/>"+
                     "Email: "+$scope.email+"<br/>"+

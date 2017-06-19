@@ -1,5 +1,4 @@
 <!doctype html>
-<!doctype html>
 <html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
@@ -24,7 +23,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand visible-xs">GALLURA</a>
+            <a class="navbar-brand visible-xs">OLBIA</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -33,7 +32,7 @@
                 <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li><a href="index.html">SOBRE NÓS</a></li>
                 <li class="active"><a href="facilidades.html">FACILIDADES</a></li>
-                <li><a href="#contato">FALE CONOSCO</a></li>
+                <li><a href="index.html#contato">FALE CONOSCO</a></li>
             </ul>
         </div>
     </div>
@@ -117,8 +116,34 @@
 <section id="section3" class="section3 wow bounceInUp" >
     <a class="scroll-bottom text-center" href="#section4">V</a>
 </section>
+<div class="section3desc" class="row">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+            <img src="/images/facilities/wifi.png" />
+            &nbsp;&nbsp;&nbsp;<h1>BUSINESS AREA</h1>&nbsp;&nbsp;&nbsp;
+            <img src="/images/facilities/organization.png" />
+            <p>Espaço dedicado a suas atividades profissionais, excelentes desktops (Apple) e internet de alta velocidade distribuidos num ambiente com estações de trabalho de alto nível.
+                Business Area é um espaço com a assinatura <strong>Olbia Hotels.</strong></p>
+        </div>
+    </div>
+
 <section id="section4" class="section4 wow bounceInUp" >
     <a class="scroll-bottom text-center" href="#contato">V</a>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div class="text-center">
+                <img src="/images/facilities/bicicleta.png" />
+            </div>
+            <h1>SUSTENTABILIDADE</h1>
+            <p>
+                <span>Em periodos de conscientização e bom uso de nossas reservas naturais, <strong>Olbia Hotels</strong></span>
+                <span>aparelhou esta unidade com acumuladores solares e amplos espaços de iluminação.</span>
+                <span>Aparelhos de ar condicionado e computadores com baixo consumo de energia e controle</span>
+                <span>inteligente da agua em suas dependências. Oferecemos também, sem qualquer custo,</span>
+                <span><strong>bicicletas mecãnicas</strong> e <strong>elétricas</strong> para seu deslocamento nas proximidades do hotel.</span>
+            
+            </p>
+        </div>
+    </div>
 </section>
 <section id="contato" class="contato wow bounceInUp container" ng-controller="contato">
     <div class="container">
@@ -215,7 +240,7 @@
             $scope.enviar = function(){
                 if($scope.form.$valid){
                     var destinatario = "marcus.cominatto@ddtotal.com.br";
-                    var assunto = "Contato site - Gallura";
+                    var assunto = "Contato site - Olbia";
                     var msg = "";
                     msg += "Nome: "+$scope.nome+"<br/>"+
                     "Email: "+$scope.email+"<br/>"+
